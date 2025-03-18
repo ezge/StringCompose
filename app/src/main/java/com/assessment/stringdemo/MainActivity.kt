@@ -79,9 +79,9 @@ fun ParaString() {
     Text(
         buildAnnotatedString {
             append("\nThis is some text that doesn't have any style applied to it.\n")
-            withStyle(style = ParagraphStyle(lineHeight = 30.sp,
+            withStyle(style = ParagraphStyle(lineHeight = 20.sp,
                                              textIndent = TextIndent(firstLine = 60.sp,
-                                             restLine = 25.sp))
+                                                                     restLine = 25.sp))
             ) {
                 append("This is some text that is indented more on the first lines than " +
                        "the rest of the lines. It also has an increased line height.\n")
